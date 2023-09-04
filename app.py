@@ -24,6 +24,7 @@ openai.api_key = ENV["AZURE_OPENAI_KEY"]
 
 # region PROMPT SETUP
 
+prompt = ENV["PROMPT"]
 default_prompt = """
 You are an AI assistant  that helps users write concise\
  reports on sources provided according to a user query.\
@@ -33,7 +34,7 @@ You are an AI assistant  that helps users write concise\
  what they'd like to investigate.
 """
 
-system_prompt = st.sidebar.text_area("System Prompt", default_prompt, height=200)
+system_prompt = st.sidebar.text_area("System Prompt", prompt if prompt else default_prompt, height=200)
 seed_message = {"role": "system", "content": system_prompt}
 # endregion
 
