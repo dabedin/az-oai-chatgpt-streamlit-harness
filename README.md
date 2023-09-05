@@ -15,7 +15,8 @@ AZURE_OPENAI_API_VERSION=""
 AZURE_OPENAI_CHATGPT_DEPLOYMENT=""
 ```
 
-You can find the values for these variables in the Azure Portal.  You will need to create an Azure OpenAI resource and deploy the ChatGPT model to it.  Once you have done that, you can find the values for these variables in the resource.
+You can find the values for these variables in the Azure Portal, the API versions are listed in [this doc](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference).  
+You will need to create an Azure OpenAI resource and deploy the ChatGPT model to it.  Once you have done that, you can find the values for these variables in the resource.
 
 The app will load this .env file using the python-dotenv library.
 
