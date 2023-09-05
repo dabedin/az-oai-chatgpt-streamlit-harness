@@ -11,8 +11,8 @@ import json
 
 # Load environment variables
 ENV = dotenv.dotenv_values(".env")
-with st.sidebar.expander("Environment Variables"):
-    st.write(ENV)
+# with st.sidebar.expander("Environment Variables"):
+#     st.write(ENV)
 
 # Set up the Open AI Client
 
